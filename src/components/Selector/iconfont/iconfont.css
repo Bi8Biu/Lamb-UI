@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "iconfont"; /* Project id  */
+    src: url("iconfont.ttf?t=1646139655860") format("truetype");
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shangla:before {
+    content: "\e609";
+}
+
+.icon-xiala:before {
+    content: "\e60b";
+}
