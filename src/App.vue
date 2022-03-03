@@ -3,22 +3,22 @@
  * @Author: SuperLy
  * @LastEditors: SuperLy
  * @Date: 2022-02-28 15:30:37
- * @LastEditTime: 2022-03-03 17:20:53
+ * @LastEditTime: 2022-03-03 17:43:00
  * @FilePath: \Lamb-UI\src\App.vue
 -->
 
 <template>
-  <Selector
+  <!-- <Selector
     style="margin: 100px 500px"
     :data="selectorData"
     :selected="getSelectValue"
     placeholder="请选择框架"
-  ></Selector>
+  ></Selector> -->
 </template>
 
 <script lang="ts">
 import { defineComponent, reactive } from "vue";
-import Selector from "../module/Selector/index.vue";
+import Selector from "../Lamb-UI/Selector/index.vue";
 export default defineComponent({
   name: "App",
   components: { Selector },
