@@ -3,7 +3,7 @@
  * @Author: SuperLy
  * @LastEditors: SuperLy
  * @Date: 2022-02-28 15:30:37
- * @LastEditTime: 2022-03-01 21:06:28
+ * @LastEditTime: 2022-03-03 17:20:53
  * @FilePath: \Lamb-UI\src\App.vue
 -->
 
@@ -18,7 +18,7 @@
 
 <script lang="ts">
 import { defineComponent, reactive } from "vue";
-import Selector from "./components/Selector/Selector.vue";
+import Selector from "../module/Selector/index.vue";
 export default defineComponent({
   name: "App",
   components: { Selector },

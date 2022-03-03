@@ -3,8 +3,8 @@
  * @Author: SuperLy
  * @LastEditors: SuperLy
  * @Date: 2022-03-01 15:05:18
- * @LastEditTime: 2022-03-01 21:06:25
- * @FilePath: \Lamb-UI\src\components\Selector\Selector.vue
+ * @LastEditTime: 2022-03-03 17:22:28
+ * @FilePath: \Lamb-UI\module\Selector\index.vue
 -->
 <template>
   <div class="selector" v-focus>
