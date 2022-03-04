@@ -3,8 +3,8 @@
  * @Author: SuperLy
  * @LastEditors: SuperLy
  * @Date: 2022-03-01 15:05:18
- * @LastEditTime: 2022-03-03 17:22:28
- * @FilePath: \Lamb-UI\module\Selector\index.vue
+ * @LastEditTime: 2022-03-04 18:14:19
+ * @FilePath: \Lamb-UI\Lamb-UI\Selector\index.vue
 -->
 <template>
   <div class="selector" v-focus>
@@ -54,7 +54,7 @@ import focus from "./directives/focus";
 type item = { id: string | number; value: string };
 
 export default defineComponent({
-  name: "Selector",
+  name: "lb-selector",
   directives: { focus },
   props: {
     data: {
