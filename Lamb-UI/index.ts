@@ -3,16 +3,19 @@
  * @Author: SuperLy
  * @LastEditors: SuperLy
  * @Date: 2022-03-03 17:25:12
- * @LastEditTime: 2022-03-04 18:20:47
+ * @LastEditTime: 2022-03-05 10:59:09
  * @FilePath: \Lamb-UI\Lamb-UI\index.ts
  */
 // 引入组件
 // import Button from './Button/index.vue';
 import lbSelector from './Selector/index.vue';
 import lbTreeMenu from './TreeMenu/index.vue';
+import lbLink from './Link/index.vue';
+import LbButton from './Button/index.vue';
+
 
 // 所有组件
-const Components = [lbSelector, lbTreeMenu];
+const Components = [lbSelector, lbTreeMenu, lbLink, LbButton];
 
 // 分别暴露组件，用于按需引入
 export const Selector = {
