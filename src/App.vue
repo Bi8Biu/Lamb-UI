@@ -3,7 +3,7 @@
  * @Author: SuperLy
  * @LastEditors: SuperLy
  * @Date: 2022-02-28 15:30:37
- * @LastEditTime: 2022-03-05 11:45:01
+ * @LastEditTime: 2022-03-06 18:43:53
  * @FilePath: \Lamb-UI\src\App.vue
 -->
 
@@ -44,14 +44,25 @@
   <lb-link type="danger" :disabled="true">危险链接</lb-link>
   <lb-link type="info" :disabled="true">信息链接</lb-link> -->
 
-  <lb-button>默认按钮</lb-button>
+  <!-- <lb-button>默认按钮</lb-button>
   <lb-button type="primary">主要按钮</lb-button>
   <lb-button type="success">成功按钮</lb-button>
   <lb-button type="info">信息按钮</lb-button>
   <lb-button type="warning" :circle="true">警告按钮</lb-button>
   <lb-button type="danger" :circle="true">
     <div style="width: 20px; height: 20px; line-height: 20px">A</div>
-  </lb-button>
+  </lb-button> -->
+  <div style="width: 520px; height: 280px">
+    <lb-carousel
+      :data="carData"
+      type="slide"
+      target="_self"
+      :autoPlay="true"
+      :dotSize="8"
+      @toggle="toggle"
+      :ControllerRound="true"
+    ></lb-carousel>
+  </div>
 </template>
 
 <script lang="ts">
@@ -130,11 +141,55 @@ export default defineComponent({
     function chooseMenu(item: any) {
       alert(item.title);
     }
+
+    // 轮播图 数据 与 方法
+    type TCarouselItem = {
+      id: number | string;
+      src: string;
+      [propName: string]: any;
+    };
+    const carData: Array<TCarouselItem> = [
+      {
+        id: "1",
+        src: "https://gtms02.alicdn.com/tps/i2/TB10vPXKpXXXXacXXXXvKyzTVXX-520-280.jpg",
+        href: "",
+      },
+      {
+        id: "2",
+        src: "https://img.alicdn.com/imgextra/i4/6000000004047/O1CN01Y8A3Cu1flZaFyZZft_!!6000000004047-0-alimamazszw.jpg",
+        href: "",
+      },
+      {
+        id: "3",
+        src: "https://gtms03.alicdn.com/tps/i3/TB1gXd1JXXXXXapXpXXvKyzTVXX-520-280.jpg",
+        href: "",
+      },
+      {
+        id: "4",
+        src: "https://img.alicdn.com/tfs/TB1wOidVWL7gK0jSZFBXXXZZpXa-520-280.jpg",
+        href: "",
+      },
+      {
+        id: "5",
+        src: "https://gtms01.alicdn.com/tps/i1/TB1r4h8JXXXXXXoXXXXvKyzTVXX-520-280.jpg",
+        href: "",
+      },
+    ];
+
+    function toggle(type: string, oldIndex: number, curIndex: number) {
+      alert([type, oldIndex, curIndex]);
+    }
+    function autoToggle(oldIndex: number, curIndex: number) {
+      console.log(oldIndex, curIndex);
+    }
     return {
       //   selectorData,
       //   getSelectValue,
-      menuData,
-      chooseMenu,
+      //   menuData,
+      //   chooseMenu,
+      carData,
+      toggle,
+      autoToggle,
     };
   },
 });

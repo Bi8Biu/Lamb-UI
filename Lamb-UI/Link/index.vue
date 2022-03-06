@@ -3,7 +3,7 @@
  * @Author: SuperLy
  * @LastEditors: SuperLy
  * @Date: 2022-03-05 09:30:49
- * @LastEditTime: 2022-03-05 10:25:25
+ * @LastEditTime: 2022-03-06 12:09:46
  * @FilePath: \Lamb-UI\Lamb-UI\Link\index.vue
 -->
 <template>
@@ -15,7 +15,7 @@
       disabled ? 'is-disabled' : '',
     ]"
     :href="disabled ? 'javascript:void(0)' : href"
-    :target="disabled ? '_self' : target"
+    :target="target"
   >
     <span>
       <slot></slot>
