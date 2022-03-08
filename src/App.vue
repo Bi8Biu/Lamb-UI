@@ -3,7 +3,7 @@
  * @Author: SuperLy
  * @LastEditors: SuperLy
  * @Date: 2022-02-28 15:30:37
- * @LastEditTime: 2022-03-06 18:43:53
+ * @LastEditTime: 2022-03-08 11:32:08
  * @FilePath: \Lamb-UI\src\App.vue
 -->
 
@@ -52,7 +52,8 @@
   <lb-button type="danger" :circle="true">
     <div style="width: 20px; height: 20px; line-height: 20px">A</div>
   </lb-button> -->
-  <div style="width: 520px; height: 280px">
+
+  <!-- <div style="width: 520px; height: 280px">
     <lb-carousel
       :data="carData"
       type="slide"
@@ -62,7 +63,9 @@
       @toggle="toggle"
       :ControllerRound="true"
     ></lb-carousel>
-  </div>
+  </div> -->
+
+  <lb-stars :score="2.5" type="readonly"></lb-stars>
 </template>
 
 <script lang="ts">
@@ -182,14 +185,29 @@ export default defineComponent({
     function autoToggle(oldIndex: number, curIndex: number) {
       console.log(oldIndex, curIndex);
     }
+
+    const myColors = {
+      "2": "#99A9BF",
+      "3": "#F7BA2A",
+      "5": "#FF9900",
+    };
+    const myTexts = {
+      "1": "极差",
+      "2": "失望",
+      "3": "一般",
+      "4": "满意",
+      "5": "完美",
+    };
     return {
       //   selectorData,
       //   getSelectValue,
       //   menuData,
       //   chooseMenu,
-      carData,
-      toggle,
-      autoToggle,
+      //   carData,
+      //   toggle,
+      //   autoToggle,
+      myColors,
+      myTexts,
     };
   },
 });

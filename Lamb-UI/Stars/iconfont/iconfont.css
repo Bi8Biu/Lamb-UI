@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "iconfont"; /* Project id  */
+    src: url("iconfont.ttf?t=1646661018777") format("truetype");
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-active-star:before {
+    content: "\e9a1";
+}
+
+.icon-star:before {
+    content: "\e9a2";
+}
