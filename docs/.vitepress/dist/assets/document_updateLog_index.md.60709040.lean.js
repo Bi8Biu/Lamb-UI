@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,a as _}from"./app.ef179bae.js";const v='{"title":"\u66F4\u65B0\u65E5\u5FD7","description":"","frontmatter":{},"headers":[],"relativePath":"document/updateLog/index.md"}',r={},i=_("",4),s=[i];function d(o,n,c,l,h,p){return t(),a("div",null,s)}var f=e(r,[["render",d]]);export{v as __pageData,f as default};
