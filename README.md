@@ -30,7 +30,7 @@
 
 | 参数      | 说明            | 类型    |                   可选值                    | 是否必须 | 默认值 |
 | :-------- | :-------------- | :------ | :-----------------------------------------: | :------: | :----: |
-| type      | 类型            | String  | primary / success / warning / danger / info |   可选   |   —    |
+| type      | 组件类型        | String  | primary / success / warning / danger / info |   可选   |   —    |
 | underline | 是否下划线      | Boolean |                      —                      |   可选   |  true  |
 | disabled  | 是否禁用状态    | Boolean |                      —                      |   可选   | false  |
 | href      | 原生 href 属性  | String  |                      —                      |   可选   |   —    |
@@ -46,7 +46,7 @@
 
 | 参数   | 说明         | 类型    | 可选值                                      | 是否必须 | 默认值 |
 | :----- | :----------- | :------ | :------------------------------------------ | :------: | :----: |
-| type   | 类型         | String  | primary / success / warning / danger / info |   可选   |   —    |
+| type   | 组件类型     | String  | primary / success / warning / danger / info |   可选   |   —    |
 | round  | 是否圆角按钮 | Boolean | —                                           |   可选   | false  |
 | circle | 是否圆形按钮 | Boolean | —                                           |   可选   | false  |
 
@@ -63,7 +63,7 @@
 | 参数              | 说明                   |      类型      |             可选值              | 是否必须 |     默认值      |
 | :---------------- | :--------------------- | :------------: | :-----------------------------: | :------: | :-------------: |
 | data              | 轮播图数据             | Array\<object> |                —                |   必须   |        —        |
-| type              | 轮播图类型             |     String     |          fade / slide           |   可选   |      fade       |
+| type              | 组件类型               |     String     |          fade / slide           |   可选   |      fade       |
 | autoPlay          | 是否自动播放           |    Boolean     |                —                |   可选   |      true       |
 | interval          | 自动播放间隔           |     Number     |                —                |   可选   |      3000       |
 | target            | 原生 a标签 target 属性 |     String     | _blank / _self / _parent / _top |   可选   |     _blank      |
@@ -96,7 +96,7 @@
 
 | 参数      | 说明                     |  类型   |       可选值       | 是否必须 | 默认值  |
 | :-------- | :----------------------- | :-----: | :----------------: | :------: | :-----: |
-| type      | 评分组件类型             | String  | default / readonly |   可选   | default |
+| type      | 组件类型                 | String  | default / readonly |   可选   | default |
 | sum       | 星星数量                 | Number  |         —          |   可选   |    5    |
 | size      | 星星大小                 | Number  |         —          |   可选   |   16    |
 | colors    | 颜色映射对象             | Object  |         —          |   可选   |  null   |
@@ -112,6 +112,28 @@
 | 事件名称 | 说明       | 回调参数                   |
 | -------- | ---------- | -------------------------- |
 | score    | 评分后回调 | 接收一个参数，为评价的分数 |
+
+
+
+
+
+## Magnifier
+
+### prop
+
+| 参数            | 说明                                    |  类型  |           可选值            | 是否必须 |         默认值          |
+| :-------------- | :-------------------------------------- | :----: | :-------------------------: | :------: | :---------------------: |
+| src             | 图片地址                                | String |              —              |   必须   |            —            |
+| type            | 组件类型                                | String | inRect / inCircle / outRect |   可选   |         inRect          |
+| times           | 放大倍数                                | Number |              —              |   可选   |            2            |
+| imgWidth        | 图片宽度                                | Number |              —              |   可选   |           600           |
+| imgHeight       | 图片长度                                | Number |              —              |   可选   |           450           |
+| magnifierWidth  | 放大镜宽度                              | Number |              —              |   可选   |           200           |
+| magnifierHeight | 放大镜长度                              | Number |              —              |   可选   |           200           |
+| magnifierBoder  | 放大镜边框，仅在 非 outRect 模式下有效  | String |              —              |   可选   |   5px solid #314154;    |
+| outRectBgc      | 放大镜背景颜色，仅 outRect 模式下有效   | String |              —              |   可选   | rgba(254, 222, 79, 0.5) |
+| viewWidth       | 右侧放大视图宽度，仅 outRect 模式下有效 | Number |              —              |   可选   |           450           |
+| viewHeight      | 右侧放大视图长度，仅 outRect 模式下有效 | Number |              —              |   可选   |           450           |
 
 
 

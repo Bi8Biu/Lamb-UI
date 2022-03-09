@@ -3,7 +3,7 @@
  * @Author: SuperLy
  * @LastEditors: SuperLy
  * @Date: 2022-02-28 15:30:37
- * @LastEditTime: 2022-03-08 11:32:08
+ * @LastEditTime: 2022-03-09 15:39:10
  * @FilePath: \Lamb-UI\src\App.vue
 -->
 
@@ -64,8 +64,17 @@
       :ControllerRound="true"
     ></lb-carousel>
   </div> -->
+  <!-- <lb-stars :score="2.5" type="readonly"></lb-stars> -->
+  <!-- src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.nga.178.com%2Fattachments%2Fmon_201712%2F12%2F-39t2Q5-6f44XbZ34T3cS1hc-vh.jpg&refer=http%3A%2F%2Fimg.nga.178.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1649390195&t=1d2ef21bf7cfa3daca6c29f73b10b09b" -->
 
-  <lb-stars :score="2.5" type="readonly"></lb-stars>
+  <lb-magnifier
+    :src="require('./assets/demo.png')"
+    type="outRect"
+    :imgWidth="900"
+    :imgHeight="450"
+    :magnifierWidth="250"
+    :magnifierHeight="250"
+  ></lb-magnifier>
 </template>
 
 <script lang="ts">
