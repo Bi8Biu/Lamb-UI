@@ -1,0 +1,118 @@
+@import "./iconfont/carousel-font/iconfont.css";
+.car-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    //   轮播图成员
+    .car-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    // 轮播图动画：淡入淡出
+    &.fade {
+        .v-enter-active,
+        .v-leave-active {
+            transition: all 0.5s linear;
+        }
+        .v-enter-from,
+        .v-leave-to {
+            opacity: 0;
+        }
+        .v-enter-to,
+        .v-leave-from {
+            opacity: 1;
+        }
+    }
+
+    // 轮播图动画:左右滑动
+    &.slide.next {
+        // 轮播图动画:从右到左
+        .v-enter-active,
+        .v-leave-active {
+            transition: all 0.3s linear;
+        }
+        .v-enter-from {
+            transform: translateX(100%);
+        }
+        .v-enter-to,
+        .v-leave-from {
+            transform: translateX(0%);
+        }
+
+        .v-leave-to {
+            transform: translateX(-100%);
+        }
+    }
+    &.slide.prev {
+        // 轮播图动画 从左到右
+        .v-enter-active,
+        .v-leave-active {
+            transition: all 0.3s linear;
+        }
+        .v-enter-from {
+            transform: translateX(-100%);
+        }
+        .v-enter-to,
+        .v-leave-from {
+            transform: translateX(0%);
+        }
+
+        .v-leave-to {
+            transform: translateX(100%);
+        }
+    }
+
+    // dot
+    .dot-container {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 3px;
+        border-radius: 10px;
+    }
+
+    //   controller
+    .cur-controller {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        &.left {
+            left: 0;
+        }
+        &.right {
+            right: 0;
+        }
+    }
+
+    // controller
+    .controller-btn {
+        text-align: center;
+        cursor: pointer;
+        font-weight: 700;
+        user-select: none;
+    }
+
+    // dot
+    .car-dot {
+        float: left;
+        margin: 3px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    // item
+    .car-item-container {
+        display: block;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

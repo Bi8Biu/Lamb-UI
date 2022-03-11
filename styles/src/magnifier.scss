@@ -1,0 +1,18 @@
+.magnifier-container {
+    display: block;
+    position: relative;
+    .magnifier {
+        position: absolute;
+        cursor: move;
+        box-shadow: 0 0 50px #314154;
+        box-sizing: border-box;
+        &.in-circle {
+            border-radius: 50%;
+        }
+    }
+    .magnifier-view {
+        position: absolute;
+        top: 0px;
+        left: 100%;
+    }
+}

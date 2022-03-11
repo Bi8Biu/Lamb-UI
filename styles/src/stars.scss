@@ -1,0 +1,30 @@
+@import "./iconfont/stars-font/iconfont.css";
+
+.stars-container {
+    position: relative;
+    display: inline-block;
+    color: #c0c4cc;
+}
+
+.stars {
+    display: inline-block;
+    padding: 5px;
+    transition: color 0.2s;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+.clickable {
+    position: absolute;
+    i {
+        cursor: pointer;
+    }
+}
+.readonly {
+    position: absolute;
+}
+.score-text {
+    position: absolute;
+    left: 100%;
+    padding: 5px 2px;
+    white-space: nowrap;
+}

@@ -1,0 +1,41 @@
+@import "./iconfont/treeMenu-font/iconfont.css";
+
+.lb-menu-container {
+    background-color: #545c64;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    font-size: 10px;
+    cursor: pointer;
+    li {
+        list-style: none;
+        color: #fff;
+    }
+    li:hover {
+        background-color: #434a50;
+    }
+    // item
+    .title {
+        padding: 20px;
+    }
+    // subMenu
+    .subMenu {
+        position: relative;
+        padding: 20px;
+        .subMenu-title {
+            display: flex;
+            justify-content: space-between;
+        }
+        .child-menu {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+        }
+    }
+    .subMenu:hover {
+        & > .child-menu {
+            display: block;
+        }
+    }
+}
