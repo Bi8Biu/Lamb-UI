@@ -1,6 +1,6 @@
 {
     "name": "lamb-ui",
-    "version": "1.1.4",
+    "version": "1.0.0",
     "description": "PC UI Components built on Vue3",
     "author": "SuperLy",
     "license": "MIT",
@@ -8,7 +8,8 @@
     "module": "es/index.js",
     "style": "lib/styles/index.css",
     "files": [
-        "lib"
+        "lib",
+        "es"
     ],
     "typing/types": [],
     "scripts": {
